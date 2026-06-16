@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Brew Haven | Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Brew Haven</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="cart-box">
+        Cart: <span id="cartCount">0</span>
+    </div>
+</header>
+
+
+<section class="menu-hero">
+    <h1>Our Signature Café Menu</h1>
+    <p>Fresh Brewed Coffee • Artisan Desserts • Premium Taste</p>
+</section>
+
+
+<!-- MENU GRID -->
+<div class="menu-grid">
+
+
+<!-- ========== COFFEE ITEMS ========== -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"loading="lazy">
+<h3>Espresso Shot</h3>
+<p>Rs. 499</p>
+<button onclick="addToCart('Espresso Shot',499)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"loading="lazy">
+<h3>Matcha Latte</h3>
+<p>Rs. 549</p>
+<button onclick="addToCart('Matcha Latte',549)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c"loading="lazy">
+<h3>Iced Spanish Latte</h3>
+<p>Rs. 599</p>
+<button onclick="addToCart('Iced Spanish Latte',599)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814"loading="lazy">
+<h3>Caramel Latte</h3>
+<p>Rs. 649</p>
+<button onclick="addToCart('Caramel Latte',649)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13"loading="lazy">
+<h3>Vanilla Latte</h3>
+<p>Rs. 649</p>
+<button onclick="addToCart('Vanilla Latte',649)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff"loading="lazy">
+<h3>Americano</h3>
+<p>Rs. 499</p>
+<button onclick="addToCart('Americano',499)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571"loading="lazy">
+<h3>Mocha Coffee</h3>
+<p>Rs. 699</p>
+<button onclick="addToCart('Mocha Coffee',699)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505253213348-cd54c92b37e3"loading="lazy">
+<h3>Cheesecake</h3>
+<p>Rs. 799</p>
+<button onclick="addToCart('Cheesecake',799)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f"loading="lazy">
+<h3>Tiramisu</h3>
+<p>Rs. 849</p>
+<button onclick="addToCart('Tiramisu',849)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569"loading="lazy">
+<h3>Chocolate Cake</h3>
+<p>Rs. 899</p>
+<button onclick="addToCart('Chocolate Cake',899)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777"loading="lazy">
+<h3>Croissant</h3>
+<p>Rs. 499</p>
+<button onclick="addToCart('Croissant',499)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7c0"loading="lazy">
+<h3>Macchiato</h3>
+<p>Rs. 549</p>
+<button onclick="addToCart('Macchiato',549)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521305916504-4a1121188589"loading="lazy">
+<h3>Affogato</h3>
+<p>Rs. 699</p>
+<button onclick="addToCart('Affogato',699)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187"loading="lazy">
+<h3>Latte Art Special</h3>
+<p>Rs. 799</p>
+<button onclick="addToCart('Latte Art Special',799)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c"loading="lazy">
+<h3>Hazelnut Latte</h3>
+<p>Rs. 599</p>
+<button onclick="addToCart('Hazelnut Latte',599)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"loading="lazy">
+<h3>Cold Brew</h3>
+<p>Rs. 699</p>
+<button onclick="addToCart('Cold Brew',699)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7"loading="lazy">
+<h3>Matcha Frappé</h3>
+<p>Rs. 649</p>
+<button onclick="addToCart('Matcha Frappé',649)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814"loading="lazy">
+<h3>Iced Mocha</h3>
+<p>Rs. 699</p>
+<button onclick="addToCart('Iced Mocha',699)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571"loading="lazy">
+<h3>Flat White</h3>
+<p>Rs. 549</p>
+<button onclick="addToCart('Flat White',549)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"loading="lazy">
+<h3>Signature Brew</h3>
+<p>Rs. 799</p>
+<button onclick="addToCart('Signature Brew',799)">Add to Cart</button>
+</div>
+
+</div>
+
+
+<!-- CART -->
+<div class="cart">
+<h2>Your Cart</h2>
+<ul id="cartItems"></ul>
+<h3>Total: Rs. <span id="total">0</span></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
