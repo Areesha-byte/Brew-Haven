@@ -1,0 +1,399 @@
+/* =============================================
+   CONTACT.CSS — Brew Haven Contact Page
+   Depends on: style.css (navbar, footer, btn)
+   ============================================= */
+
+/* ── HERO ── */
+.contact-hero {
+  margin-top: 76px;
+  height: 360px;
+  background: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1600&q=80') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 24, 10, 0.60);
+}
+.contact-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+.contact-eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e8c899;
+  margin-bottom: 12px;
+}
+.contact-hero-content h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+}
+.contact-hero-content h1 em {
+  font-style: italic;
+  color: #e8c899;
+}
+.contact-hero-content p {
+  margin-top: 12px;
+  font-size: 15px;
+  opacity: 0.85;
+  font-weight: 300;
+}
+
+/* ── MAIN LAYOUT ── */
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0;
+  min-height: 680px;
+}
+
+/* ── LEFT INFO PANEL ── */
+.contact-info {
+  background: #3b2f2f;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.contact-info .section-eyebrow {
+  color: #e8c899;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+.contact-h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: white;
+  margin-bottom: 36px;
+  line-height: 1.2;
+}
+.contact-form-wrap .contact-h2 {
+  color: #3b2f2f;
+}
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex: 1;
+}
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: background 0.3s;
+}
+.info-card:hover {
+  background: rgba(255,255,255,0.1);
+}
+.info-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.info-card h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  color: #a67c52;
+  margin-bottom: 5px;
+}
+.info-card p {
+  font-size: 13.5px;
+  color: #c4b49a;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* SOCIAL */
+.contact-social {
+  margin-top: 32px;
+}
+.social-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e8c899;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.social-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.social-btn {
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.8);
+  border-radius: 30px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+.social-btn:hover {
+  background: #a67c52;
+  border-color: #a67c52;
+  color: white;
+}
+
+/* ── RIGHT FORM PANEL ── */
+.contact-form-wrap {
+  background: #faf7f4;
+  padding: 60px 55px;
+}
+.contact-form-wrap .section-eyebrow {
+  color: #a67c52;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ── FORM ── */
+.contact-form {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #3b2f2f;
+  letter-spacing: 0.3px;
+}
+.required {
+  color: #c0392b;
+  margin-left: 2px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: white;
+  border: 1.5px solid #e0d6c8;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px;
+  color: #2b2b2b;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  width: 100%;
+}
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a67c52' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  cursor: pointer;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b8a898;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 0 3px rgba(166,124,82,0.12);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* ── VALIDATION STATES ── */
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192,57,43,0.1);
+}
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39,174,96,0.1);
+}
+.error-msg {
+  font-size: 12px;
+  color: #c0392b;
+  font-weight: 400;
+  display: none;
+  margin-top: 2px;
+}
+.error-msg.show {
+  display: block;
+}
+
+/* ── SUBMIT BUTTON ── */
+.submit-btn {
+  background: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.25s, transform 0.2s;
+  min-width: 180px;
+  text-align: center;
+}
+.submit-btn:hover {
+  background: #8c6440;
+  transform: translateY(-2px);
+}
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── SUCCESS MESSAGE ── */
+.form-success {
+  display: none;
+  align-items: flex-start;
+  gap: 14px;
+  background: #eafaf1;
+  border: 1.5px solid #27ae60;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-top: 4px;
+}
+.form-success.show {
+  display: flex;
+}
+.success-icon {
+  background: #27ae60;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.form-success strong {
+  font-size: 14px;
+  color: #1e8449;
+  display: block;
+  margin-bottom: 3px;
+}
+.form-success p {
+  font-size: 13px;
+  color: #27ae60;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ── MAP ── */
+.map-section {
+  padding: 80px 60px;
+  background: white;
+}
+.map-wrap {
+  margin-top: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 36px rgba(43,24,10,0.1);
+  border: 1px solid #ede5da;
+}
+.map-wrap iframe {
+  display: block;
+}
+
+/* ── FOOTER LINKS ── */
+footer a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+footer a:hover { color: #a67c52; }
+footer p { margin-bottom: 6px; }
+
+/* ── BACK TO TOP ── */
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(166,124,82,0.4);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#topBtn:hover {
+  background: #8c6440;
+  transform: translateY(-2px);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .contact-main {
+    grid-template-columns: 1fr;
+  }
+  .contact-info {
+    padding: 50px 30px;
+  }
+  .contact-form-wrap {
+    padding: 50px 30px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .map-section {
+    padding: 60px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar { padding: 16px 20px; }
+  .contact-hero { height: 300px; }
+  .submit-btn { width: 100%; }
+}
