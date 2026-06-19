@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220">
+  <circle cx="100" cy="100" r="92" fill="#3b2f2f"/>
+
+  <path d="M62 96 C62 91 66 88 70 88 L122 88 C126 88 130 91 130 96 L128 126 C127 140 116 150 102 150 L90 150 C76 150 65 140 64 126 Z" fill="#f7f3ee"/>
+
+  <path d="M130 97 C140 97 147 104 147 112 C147 120 140 127 130 127 L128 119 C134 119 138 116 138 112 C138 108 134 105 129 105 Z" fill="#f7f3ee"/>
+
+  <path d="M78 78 Q82 68 78 58" fill="none" stroke="#a67c52" stroke-width="3" stroke-linecap="round"/>
+  <path d="M96 78 Q100 66 96 54" fill="none" stroke="#a67c52" stroke-width="3" stroke-linecap="round"/>
+  <path d="M114 78 Q118 68 114 58" fill="none" stroke="#a67c52" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="100" y="184" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="4" fill="#f7f3ee">BREW</text>
+</svg>
